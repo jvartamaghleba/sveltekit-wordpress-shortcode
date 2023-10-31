@@ -29,10 +29,10 @@ const config = {
 };
 // handle wordpress url structure
 if (process.env.NODE_ENV === "production") {
-	const base = "/wp-content/plugins/my-shortcode-plugin"
+	const base = "/wp-content/plugins/my-shortcode"
 	config.kit.paths = {
 		base,
-		assets: "https://evqaristia.ge" + base
+		assets: "http://localhost:8000" + base
 	}
 }
 export default config;
