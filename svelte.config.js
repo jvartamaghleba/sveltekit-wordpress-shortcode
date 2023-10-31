@@ -24,7 +24,10 @@ const config = {
           .map((element) => element.outerHTML)
           .join(''),
       renderBody: (body) => body.innerHTML
-    })
+    }),
+    prerender: {
+      entries: ['/']
+    }
   }
 };
 // handle wordpress url structure
