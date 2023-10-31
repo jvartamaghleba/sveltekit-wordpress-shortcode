@@ -17,8 +17,8 @@ const config = {
       fallback: null,
       indexPath: 'index.php',
       shadow: false,
-      shortcode: 'svelte-kit-shortcode',
-      prefix: 'skawpsc_svelte_kit_shortcode',
+      shortcode: 'svelte-kit-books-shortcode',
+      prefix: 'skawpsc_svelte_kit_books_shortcode',
       renderHead: (head) =>
         [...head.querySelectorAll(`link[rel="modulepreload"]`)]
           .map((element) => element.outerHTML)
@@ -29,7 +29,7 @@ const config = {
 };
 // handle wordpress url structure
 if (process.env.NODE_ENV === "production") {
-	const base = "/wp-content/plugins/my-shortcode"
+	const base = "/wp-content/plugins/books-shortcode"
 	config.kit.paths = {
 		base,
 		assets: "http://localhost:8000" + base
