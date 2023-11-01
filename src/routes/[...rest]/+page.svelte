@@ -7,7 +7,7 @@
 
 	const PagePath = $page.url.pathname;
 
-	if (PagePath === '/index.php/books') {
+	if (PagePath === '/books') {
 		Component = Books;
     console.log('books')
 	} else {
